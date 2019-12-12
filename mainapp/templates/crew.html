@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+	<!--SEARCH CONTESTANT-->
+	<!-- Breadcrumb Area Start -->
+    <section class="set-bg" data-setbg="{% static 'mainapp/img/bg.jpg' %}" >
+        <!-- Heading -->
+        <div class="row ">
+            <div class="col-12  text-center" style="padding: 100px">
+                <h3 style="color: #fff">Vote for the coolest Gengeton crew in Kenya</h3>
+			</div>           
+        </div>
+        <!-- Heading End -->
+        
+	</section>
+
+	<!-- Product filter section -->
+	<section class="pt-5" style="background-color: #e5e5e5;">
+        <div class="container crew-wrap">
+            
+            <div class="row" style=" width: 100%;" >
+
+                <!-- Single Card Area -->
+                <div class=" card mb-3 col-md-3 col-12" style="border-radius: 0px; border: 1px solid #bbbbbb; width: 23%;">
+                    <img class="card-img-top crew "  src="{% static 'mainapp/img/product/ethic.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                        
+                        <h5>
+                            <a href="#">
+                                <span>Ethic</span>
+                            </a>
+                        </h5>
+                        <div>
+                            <a href="https://forms.gle/SXJexBR9rpnxYUF99" class="btn btn-danger pull-right">Vote</a>
+                        </div>
+                       
+                        
+                    </div>
+                  </div>
+
+                 <!-- Single Card Area -->
+                <div class=" card mb-3 col-md-3 col-12" style="border-radius: 0px; border: 1px solid #bbbbbb; width: 23%;">
+                    <img class="card-img-top  crew"  src="{% static 'mainapp/img/product/ochungulo.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                        
+                        <h5>
+                            <a href="#">
+                                <span>Ochungulo</span>
+                            </a>
+                        </h5>
+                        <div>
+                            <a href="https://forms.gle/SXJexBR9rpnxYUF99" class="btn btn-danger pull-right">Vote</a>
+                        </div>
+                       
+                        
+                    </div>
+                  </div>
+
+               <!-- Single Card Area -->
+                <div class=" card mb-3 col-md-3 col-12" style="border-radius: 0px; border: 1px solid #bbbbbb; width: 23%;">
+                    <img class="card-img-top crew "  src="{% static 'mainapp/img/product/boondocks.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                        
+                        <h5>
+                            <a href="#">
+                                <span>Boondocks</span>
+                            </a>
+                        </h5>
+                        <div>
+                            <a href="https://forms.gle/SXJexBR9rpnxYUF99" class="btn btn-danger pull-right">Vote</a>
+                        </div>
+                       
+                        
+                    </div>
+                  </div>
+
+                 <!-- Single Card Area -->
+                <div class=" card mb-3 col-md-3 col-12" style="border-radius: 0px; border: 1px solid #bbbbbb; width: 23%;">
+                    <img class="card-img-top crew "  src="{% static 'mainapp/img/product/sailors.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                        
+                        <h5>
+                            <a href="#">
+                                <span>Sailors</span>
+                            </a>
+                        </h5>
+                        <div>
+                            <a href="https://forms.gle/SXJexBR9rpnxYUF99" class="btn btn-danger pull-right">Vote</a>
+                        </div>
+                       
+                        
+                    </div>
+                  </div>
+                  
+
+            </div>
+        </div>
+
+    </section> 
+	<!-- Product filter section end -->
+{% endblock %}

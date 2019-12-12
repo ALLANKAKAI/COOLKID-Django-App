@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+	<!-- Hero section -->
+	<section class="container">
+        <div class="content">
+        <div class="register-title">
+            <h3>Registration Form</h3>
+        </div>
+            <form method="post" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+        <div class="register-body row">
+                <div class="file-upload mb-3 col-md-4 col-xm-12 col-sm-12">
+                        
+                        <div class="image-upload-wrap">
+                            <input name="image" class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" required />
+                            <div class="drag-text">
+                                <h5>Drag and drop a file or select add Image</h5>
+                            </div>
+                        </div>
+                        <div class="file-upload-content">
+                            <img class="file-upload-image" src="#" alt="your image" />
+                            <div class="image-title-wrap">
+                            <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                            </div>
+                        </div>
+                </div>
+                <div class=" row col-md-8 ">
+                    <div class="form-group col-md-6 col-xm-12 col-sm-12">
+                        <label >Full Name:</label>
+                        <input name="full_name" type="text" class="form-control" required >
+                    </div>
+                    <div class="form-group col-md-6 col-xm-12 col-sm-12">
+                        <label >Instagram Username:</label>
+                        <input name="ig_username" type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-6 col-xm-12 col-sm-12">
+                        <label >Email Address:</label>
+                        <input name="email" type="email" class="form-control"  >
+                    </div>
+                    <div class="form-group col-md-6 col-xm-12 col-sm-12">
+                        <label >Phone Number:</label>
+                        <input name="phone" type="text" class="form-control" max="12" required>
+                    </div> 
+                    <div class="form-group col-md-6 col-xm-12 col-sm-12">
+                        <label >Gender:</label>
+                        <select name="gender" class="form-control" required>
+                            <option>male</option>
+                            <option>female</option>
+                            <option>other</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6 col-xm-12 col-sm-12">
+                        <label >County:</label>
+                        <select name="county" class="form-control" required>
+                            <option>bungoma</option>
+                            <option>busia</option>
+                            <option>kakamega</option>
+                            <option>nakuru</option>
+                            <option>mombasa</option>
+                        </select>
+                    </div> 
+                    <div class="form-group col-md-6 col-xm-12 col-sm-12">
+                        <button  type="submit" class="btn btn-danger">Submit</button>
+                    </div>                       
+                </div>
+                    
+        </div>
+                </form>
+        
+        </div>
+              
+	</section>
+	<!-- Hero section end -->
+{% endblock %}
+

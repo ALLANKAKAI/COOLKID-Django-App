@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+	<!-- Hero section -->
+	<section class="hero-section">
+		<div class="hero-slider owl-carousel">
+			<div class="hs-item set-bg" data-setbg="{% static 'mainapp/img/bg.jpg' %}">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-6 col-lg-7 text-white">
+							<h2>Coolkid Contest</h2>
+							<h1>2020</h1>
+							<p>Who is the coolest kid in your city?</p>
+							<a href="{% url 'reg_form' %}" class="site-btn sb-line">REGISTER</a>
+							<a target="_blank" href="https://forms.gle/gco3nZV2oK6YkhHHA" class="site-btn sb-white">VOTE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hs-item set-bg" data-setbg="{% static 'mainapp/img/bg-2.jpg' %}">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-6 col-lg-7 text-white">
+							<h2>Coolkid Contest</h2>
+							<h1>2020</h1>
+							<p>Who is the coolest kid in your city?</p>
+							<a href="{% url 'reg_form' %}" class="site-btn sb-line">REGISTER</a>
+							<a href="{% url 'contestant' %}" class="site-btn sb-white">VOTE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="slide-num-holder" id="snh-1"></div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+
+
+
+
+	<!-- letest product section -->
+	<section class="top-letest-product-section" id="about">
+		<div class="container">
+			<div class="section-title" >
+				<h2>About Us:</h2>
+			</div>
+			<div class="section-content container">
+				<p>Being “cool” is something most millennials identify with. It is primarily a raw expression of confidence with a goofy side. A cool person demonstrates endless energy and curiosity, and is always looking for the next big thing in fashion, technology and global trends at large. 
+					The purpose of Coolkid contest is thus to identify and celebrate the “cool” personalities within each of us and develop ways with which this energy can be harnessed for the betterment of the human race.</p>
+			</div>
+			<div class="section-title" >
+				<h2>Who we are:</h2>
+			</div>
+			<div class="section-content container">
+				<p>The Coolkid contest is a global movement that celebrates millennials and empowers them to make the world a better place through experiences that build confidence, promotes innovation and celebrates the “hustling”  spirit.</p>
+			</div>
+			<div class="section-title" >
+				<h2>Contestants:</h2>
+			</div>
+			<div class="section-content container">
+				<p>The contestants and titleholders that have gone through the Coolkid contest are able to demonstrate passion and determination in their respective careers and use their talents and influence to  advocate positive change in different socio-economic spheres.</p>
+			</div>
+		</div>
+	</section>
+	<!-- letest product section end -->
+
+{% endblock %}

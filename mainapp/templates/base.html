@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+{% load static %}
+
+{% load dictionary_tags %}
+<head>
+	<title>Coolkid</title>
+	<meta charset="UTF-8">
+	<meta name="description" content=" Divisima | eCommerce Template">
+	<meta name="keywords" content="divisima, eCommerce, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="{% static 'mainapp/img/coolkid.png' %}" rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{% static 'mainapp/css/bootstrap.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'mainapp/css/font-awesome.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'mainapp/css/flaticon.css' %}"/>
+	<link rel="stylesheet" href="{% static 'mainapp/css/slicknav.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'mainapp/css/jquery-ui.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'mainapp/css/owl.carousel.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'mainapp/css/animate.css' %}"/>
+	<link rel="stylesheet" href="{% static 'mainapp/css/style.css' %}"/>
+
+
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<nav class="main-navbar">
+			<div class="container">
+				<!-- menu -->
+				<ul class="main-menu">
+					<li><a href="{% url 'index' %}">Home</a></li>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="{% url 'contestant' %}">Contestants</a></li>
+					<li><a href="{% url 'crew' %}">Crews</a></li>
+					<li><a href="{% url 'schedule' %}">Schedule</a></li>
+					<li><a href="{% url 'partners' %}">Partners</a></li>
+					<li><a href="#contact">Contact Us</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- Header section end -->
+
+
+ {% block content %}
+
+ {% endblock %}
+
+
+	<!-- Footer section -->
+	<section id="contact" class="footer-section">
+		<div class="container">
+			<div class="footer-logo text-center">
+				<a href="index.html">
+					<h2 style="color: #fff;">COOLKID inc.</h2>
+				</a>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-sm-6">
+					<div class="footer-widget about-widget">
+						<h2>Questions</h2>
+						<ul>
+							<li><a href="#about">About Us</a></li>
+							<li><a target="_blank" href="{% static 'mainapp/rules.pdf' %}">Rules</a></li>
+							<li><a href="{% url 'partners' %}">Partners</a></li>
+							<li><a href="{% url 'schedule' %}">Countries</a></li>
+							<li><a href="{% url 'schedule' %}">Schedule</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="footer-widget about-widget">
+						<h2>Questions</h2>
+						<div class="fw-latest-post-widget">
+							<div class="lp-item">
+								<div class="lp-thumb set-bg" data-setbg="{% static 'mainapp/img/blog-thumbs/1.png' %}"></div>
+								<div class="lp-content">
+									<h6>Want to enroll as a contestant?</h6>
+									<a href="https://forms.gle/zDoH3RPYQzZ34y9R9" class="readmore">Click here</a>
+								</div>
+							</div>
+							<div class="lp-item">
+								<div class="lp-thumb set-bg" data-setbg="{% static 'mainapp/img/blog-thumbs/2.png' %}"></div>
+								<div class="lp-content">
+									<h6>Want to vote?</h6>
+									<a href="https://forms.gle/ENYAkXznEaYup8Wd9" class="readmore">Click here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="footer-widget contact-widget">
+						<h2>Contact Us</h2>
+						<div class="con-info">
+							<span>C.</span>
+							<p>Coolkid inc. </p>
+						</div>
+						<div class="con-info">
+							<span>B.</span>
+							<p>Koinage street, Chester House, Suite 8</p>
+						</div>
+						<div class="con-info">
+							<span>T.</span>
+							<p>+254 719 7555 455</p>
+						</div>
+						<div class="con-info">
+							<span>E.</span>
+							<p>coolkidcontest@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="social-links-warp">
+			<div class="container">
+				<div class="social-links">
+					<a target="blank" href="https://www.instagram.com/the_coolkid_contest/" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>
+					<a target="blank" href="https://www.facebook.com/Coolkid-Contest-2020-111067203707228/" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
+					<a href="" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
+					<a target="blank" href="https://www.youtube.com/channel/UCOVzOI-6E4GTkOkVNUfaQGg/featured" class="youtube"><i class="fa fa-youtube"></i><span>youtube</span></a>
+				</div>
+
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> 
+<p class="text-white text-center mt-5">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+			</div>
+		</div>
+	</section>
+	<!-- Footer section end -->
+
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{% static 'mainapp/js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'mainapp/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'mainapp/js/jquery.slicknav.min.js' %}"></script>
+	<script src="{% static 'mainapp/js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'mainapp/js/jquery.nicescroll.min.js' %}"></script>
+	<script src="{% static 'mainapp/js/jquery.zoom.min.js' %}"></script>
+	<script src="{% static 'mainapp/js/jquery-ui.min.js' %}"></script>
+	<script src="{% static 'mainapp/js/main.js' %}"></script>
+    <script src="{% static 'mainapp/js/upload.js' %}"></script>
+	<script src="{% static 'mainapp/js/filters.js' %}"></script>
+	</body>
+</html>
